@@ -64,7 +64,8 @@ $(document).ready(function(){
 
 // Add StickyKit Class to Activate Elements
 $(window).load(function(){
-	$(".stick-to-parent").stick_in_parent();
+	$(".stick-to-parent").stick_in_parent({offset_top: 70});
+	$(".stick-to-parent-side-nav").stick_in_parent();
 });
 
 // Add FitText Class to Activate Elements

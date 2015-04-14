@@ -131,7 +131,7 @@ get_header();
 		
 	</div>
 	
-	<div class="large-3 columns stick-to-parent">
+	<div class="large-3 columns stick-to-parent-side-nav">
  		<div class="magellan-container" data-magellan-expedition>
 		  <dl class="sub-nav side-nav-container side-nav-by-heading">
 		  </dl>
