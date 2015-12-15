@@ -541,7 +541,7 @@ $meta_boxes[] = array(
 			'name' => 'Lecture Phase Description',
 			'id'   => "{$prefix}lecture_phase_desc",
 			'desc' => 'Describe lecture phase as a whole in this section.',
-			'type' => 'textarea',
+			'type' => 'wysiwyg',
 			'std'  => '',
 		),
 
