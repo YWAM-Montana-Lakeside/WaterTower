@@ -5,7 +5,7 @@ global $meta_boxes;
 
 $meta_boxes = array();
 
-    require 'library/custom_meta/programs_meta.php';
+    // require 'library/custom_meta/programs_meta.php';
 	require 'library/custom_meta/projects_meta.php';
 	require 'library/custom_meta/staffing_needs_meta.php';
 	require 'library/custom_meta/focus_tracks_meta.php';
@@ -272,7 +272,7 @@ $meta_boxes[] = array(
 			'name'  => __( 'Prerequisites', 'rwmb' ),
 			'id'    => "{$prefix}custom_prereqs",
 			'desc'  => 'Please enter any recomended prerequisites needed to apply for this school here.',
-			'type'  => 'textarea',
+			'type'  => 'wysiwyg',
 			'std'   => '',
 			'clone' => false,
 		),
