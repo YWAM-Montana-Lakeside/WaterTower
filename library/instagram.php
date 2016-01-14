@@ -63,7 +63,11 @@ function instagram_object( $hashtag ) {
         }
 
         // Reset the $url variable using the next_url attribute.
-        $url = $data['pagination']['next_url'];
+        if (isset($data['pagination']['next_url'])) {
+            $url = $data['pagination']['next_url'];
+        } else {
+            $url = null;
+        }
     }
     
     return $instagram_posts;

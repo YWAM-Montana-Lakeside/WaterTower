@@ -1,9 +1,8 @@
 <?php
 
 /**
- * 	Campus Tour
- * 	This is the custom meta for the campus
- * 	tour page and venues.
+ * 	Missions Preview
+ * 	This is the custom meta for the Missions Preview page.
  */
 
 $meta_boxes[] = array(
@@ -15,8 +14,15 @@ $meta_boxes[] = array(
 
 		//Sidebar Form
 		array(
-			'name'	=> 'Sidebar Form Shortcode',
-			'id'	=> "{$prefix}missions_preview_form_shortcode",
+			'name'	=> 'Sidebar Registration Shortcode',
+			'id'	=> "{$prefix}missions_preview_registration_form_shortcode",
+			'type'	=> 'text',
+		),
+        
+        //Sidebar Form
+		array(
+			'name'	=> 'Sidebar Question Shortcode',
+			'id'	=> "{$prefix}missions_preview_question_form_shortcode",
 			'type'	=> 'text',
 		),
         

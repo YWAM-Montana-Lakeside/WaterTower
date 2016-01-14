@@ -23,9 +23,25 @@
         }
     }
     
+    .tab-title {
+        text-align: center;
+        
+        a {
+            background: #F9F9F9;
+            color: #999;
+            font-family: "HelveticaNeueW01-77BdCn 692722";
+            text-transform: uppercase;
+        }
+            
+        &.active a {
+            background: #EFEFEF;
+            color: #666;
+        }
+    }
+    
     .missions-preview-form-container {
         background: #EFEFEF;
-        padding: 60px 16px 26px 16px;
+        padding: 20px 16px 0px 16px;
         position: relative;
         
         h4 {
@@ -40,7 +56,7 @@
         }
         
         .button {
-            background: #CCC;
+            background: $primary_color;
             position: absolute;
             left: 0px;
         }

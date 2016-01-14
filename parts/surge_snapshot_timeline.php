@@ -2,9 +2,7 @@
     <h3><i class="fa fa-history"></i> Surge Updates</h3>
 
     <?php
-
-    // The Query
-
+    
     // Get terms from just the surge being displayed
     if (is_singular('surges')) {
         $current_surge = get_term_by( 'slug', $post->post_name, 'surges_taxo');
@@ -12,7 +10,6 @@
     
     // Surges Archive, use all surges to filter posts    
     } else {
-        
         $surge_term_ids = get_terms( 'surges_taxo', array(
             'hide_empty' => 0,
             'fields' => 'ids'

@@ -167,27 +167,29 @@
 
             $instagram_posts = instagram_object('surgetaiwan');
             $instagram_posts = array_slice($instagram_posts, 0, 6);
-            foreach ( $instagram_posts as $post ) { ?>
+            foreach ( $instagram_posts as $instagram_post ) { ?>
 
-                        <li class="surge-instagram-post">
-                            <div class="instagram-image-container clearfix">
-                                <div class="instagram-img">
-                                    <?php echo '<img src="' . $post['images']['standard_resolution']['url'] . '" />'; ?>
-                                </div>
+                <li class="surge-instagram-post">
+                    <a href="<?php echo $instagram_post['data']['link']; ?>">
+                    <div class="instagram-image-container clearfix">
+                        <div class="instagram-img">
+                            <?php echo '<img src="' . $instagram_post['images']['standard_resolution']['url'] . '" />'; ?>
+                        </div>
 
-                                <div class="instagram-meta">
-                                    <div class="instagram-date"><?php echo date('M d', $post['created_time']); ?></div>
+                        <div class="instagram-meta">
+                            <div class="instagram-date"><?php echo date('M d', $instagram_post['created_time']); ?></div>
 
-                                    <div class="instagram-likes">
-                                        <i class="fa fa-heart-o"></i><?php print_r($post['likes']['count']); ?>
-                                    </div>
-
-                                    <div class="instagram-comments">
-                                        <i class="fa fa-comments-o"></i><?php print_r($post['comments']['count']); ?>
-                                    </div>
-                                </div>
+                            <div class="instagram-likes">
+                                <i class="fa fa-heart-o"></i><?php echo($instagram_post['likes']['count']); ?>
                             </div>
-                        </li>
+
+                            <div class="instagram-comments">
+                                <i class="fa fa-comments-o"></i><?php echo($instagram_post['comments']['count']); ?>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                </li>
 
             <?php } ?>
 		</ul>

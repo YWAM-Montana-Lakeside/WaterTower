@@ -60,7 +60,7 @@ endif; ?>
 
 	foreach ( $staffing_needs as $staffing_need ) {
 		$need_url = get_permalink( $staffing_need->ID );
-		$staffing_needs_list .= "<strong><a href='{$need_url}'>{$staffing_need->post_title}</a></strong>";
+		$staffing_needs_list = "<strong><a href='{$need_url}'>{$staffing_need->post_title}</a></strong>";
 		$staffing_needs_list .= end( $staffing_needs ) != $staffing_need ? ', ' : '.';
 	}
 
