@@ -5,9 +5,8 @@
   .slide-content-container {
     
     h2 {
-      border-bottom: 1px solid white;
       color: white;
-      font-size: 80px;
+      font-size: 60px;
       line-height: .9875em;
       padding-bottom: 10px;
       z-index: 999;
@@ -39,10 +38,12 @@
     }
     
     .subtitle {
-      font-family:"HelveticaNeueW01-47LtCn 692689";
-      font-size: 26px;
-      text-transform: uppercase;
-      text-shadow: 0px 0px 30px rgba(0, 0, 0, 1);
+      font-family: "HelveticaNeueW01-47LtCn 692689";
+      font-size: 18px;
+      background: #5D9ECB;
+      display: inline;
+      letter-spacing: 1px;
+      padding: 6px 40px;
     }
     
     .content-desc {

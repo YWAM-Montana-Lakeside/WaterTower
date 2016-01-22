@@ -30,9 +30,8 @@ if ( is_front_page() ) {
     include_once('img_banner_components/surges.php');
     
 // Display Banner for Acceptance Packets
-		} elseif ( 'acceptance_packets' == get_post_type()) {
-        
-    echo 'working';
+} elseif ( 'acceptance_packets' == get_post_type()) {
+    include_once('img_banner_components/acceptance_packets.php');
         
 
 } else {
