@@ -3,13 +3,15 @@ jQuery(document).ready(function() {
 	//Get all H2 Headings and store content in headers variable
 	//Also add an ID to each of the H2 headings so that each bookmark
 	//functions properly when clicked
-	var headers = Array();
+	var headers = [];
 	jQuery(".entry h2").each(function(i, val){
-		var ID = jQuery(this).text().replace(/[^a-z0-9\s]/gi, '').replace(/\ /g, '-').toLowerCase();
 		
-		headers[i] = jQuery(this).text();
-		jQuery(this).attr('id', ID);
-        jQuery(this).attr('data-magellan-destination', ID);
+        if (!jQuery(this).is(':empty')){
+            var ID = jQuery(this).text().replace(/[^a-z0-9\s]/gi, '').replace(/\ /g, '-').toLowerCase();
+		    headers.push(jQuery(this).text());
+		    jQuery(this).attr('id', ID);
+            jQuery(this).attr('data-magellan-destination', ID);
+        }
 	});
 	
 	//Display list of all H2 Headings

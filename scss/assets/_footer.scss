@@ -2,6 +2,7 @@
   background: #F6F6F6;
   color: #666;
   font-family:"HelveticaNeueW01-47LtCn 692686";
+  letter-spacing: .03rem;
   margin-top: 50px;
   text-transform: uppercase;
   
@@ -15,15 +16,19 @@
     padding: 10px 0px;
     
     span>span {
-      margin: 0px 8px;
       
       a {
         color: #BBB;
+        margin: 0px 8px;
         
         &:hover {
           color: $primary_color;
         }
       }
+        
+        &.breadcrumb_last {
+            margin-left: 8px;
+        }
     }
   }
 }

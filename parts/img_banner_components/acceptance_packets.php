@@ -5,7 +5,6 @@
  *  These are all of the custom headers for archive pages.
  */
 global $page_id;
-echo $page_id;
 $post_thumbanail = wp_get_attachment_image_src( get_post_thumbnail_id( $page_id ), 'full-width-banner', true ); ?>
 
  <div class="standard-banner-container slide-container" style="background: url(<?php echo $post_thumbanail[0]; ?>) no-repeat center center;">

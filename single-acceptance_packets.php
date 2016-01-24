@@ -61,41 +61,41 @@ get_header();
         
         <div>
             <h2>About YWAM</h2>
-            <div><?php echo of_get_option('ap_about_ywam'); ?></div>
+            <div><?php echo apply_filters( 'the_content', of_get_option('ap_about_ywam') ); ?></div>
         </div>
         
         <div>
             <h2>Target Nations</h2>
-            <div><?php echo of_get_option('ap_target_nations'); ?></div>
+            <div><?php echo apply_filters( 'the_content', of_get_option('ap_target_nations') ); ?></div>
         </div>
         <div>
             <h2>The Surge</h2>
-            <div><?php echo of_get_option('ap_the_surge'); ?></div>
+            <div><?php echo apply_filters( 'the_content', of_get_option('ap_the_surge') ); ?></div>
         </div>
         <div>
             <h2>Policies And Guidelines</h2>
-            <div><?php echo of_get_option('ap_policies_and_guidelines'); ?></div>
+            <div><?php echo apply_filters( 'the_content', of_get_option('ap_policies_and_guidelines') ); ?></div>
         </div>
         <div>
             <h2>Guests</h2>
-            <div><?php echo of_get_option('ap_guests'); ?></div>
+            <div><?php echo apply_filters( 'the_content', of_get_option('ap_guests') ); ?></div>
         </div>
         <div>
             <h2>Campus Services</h2>
-            <div><?php echo of_get_option('ap_campus_services'); ?></div>
+            <div><?php echo apply_filters( 'the_content', of_get_option('ap_campus_services') ); ?></div>
         </div>
         <div>
             <h2>Getting Here</h2>
             <iframe width='100%' height='300px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/creativemedia.f2a6e20c/attribution,zoompan,geocoder.html?access_token=pk.eyJ1IjoiY3JlYXRpdmVtZWRpYSIsImEiOiI1MzkzZjJkZjdhZmVmMDFhYzdmYjAzMzRmZDAzZDQ1ZCJ9.pL4m6di5oeOYgjxy0kVrug'></iframe>
-            <div><?php echo of_get_option('ap_getting_here'); ?></div>
+            <div><?php echo apply_filters( 'the_content', of_get_option('ap_getting_here') ); ?></div>
         </div>
         <div>
             <h2>Guidelines For Contributions</h2>
-            <div><?php echo of_get_option('ap_guidelines_for_contributions'); ?></div>
+            <div><?php echo apply_filters( 'the_content', of_get_option('ap_guidelines_for_contributions') ); ?></div>
         </div>
         <div>
             <h2>Raising Financial Support</h2>
-            <div><?php echo of_get_option('ap_raising_financial_support'); ?></div>
+            <div><?php echo apply_filters( 'the_content', of_get_option('ap_raising_financial_support') ); ?></div>
         </div>
         
 			
