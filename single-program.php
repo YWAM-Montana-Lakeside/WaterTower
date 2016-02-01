@@ -555,7 +555,7 @@ endwhile; ?>
      *  defined testimonies.
      */
      
-    display_testimonies( array('section_title' => 'What Students Are Saying' ) );
+    display_testimonies( array('section_title' => 'What People Are Saying' ) );
      
     ?>
 		
