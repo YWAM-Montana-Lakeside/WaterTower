@@ -48,16 +48,17 @@ add_action( 'template_redirect', 'testimonies_redirect_post' );
 
 function display_testimonies($arguments = array()) {
      
-    $post_id = $arguments[ 'post_id' ] ? $arguments[ 'post_id' ] : get_the_ID();
-    $number_requested = $arguments[ 'number_requested' ] ? $arguments[ 'number_requested' ] : 3;
-    $section_title = $arguments[ 'section_title' ] ? $arguments[ 'section_title' ] : 'Testimonies';
+    $post_id = isset($arguments[ 'post_id' ]) ? $arguments[ 'post_id' ] : get_the_ID();
+    $number_requested = isset($arguments[ 'number_requested' ]) ? $arguments[ 'number_requested' ] : 3;
+    $section_title = isset($arguments[ 'section_title' ]) ? $arguments[ 'section_title' ] : 'Testimonies';
 
     $query_args = array (
         'orderby'       => 'rand',
         'post_type'     => 'testimonies',
-        'programs_tax'  => get_the_slug($post_id),
+        'program_taxo'  => get_the_slug($post_id),
         'posts_per_page'=> $number_requested,
     );
+    
     $the_query = new WP_Query( $query_args );
 
     // The Loop
@@ -68,7 +69,7 @@ function display_testimonies($arguments = array()) {
         <?php while ( $the_query->have_posts() ) : $the_query->the_post(); 
         
         // Get Author Information
-        $author = get_coauthors($post->ID )[0];
+        $author = get_coauthors($post->ID)[0];
         
         ?>
             <div class="testimony-container">
