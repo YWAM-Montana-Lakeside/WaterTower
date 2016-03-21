@@ -10,7 +10,7 @@ get_header();
 <div class="row">
     <div class="medium-8 columns">
         <h1>Statement of Faith</h1>
-        <p>We, the Board of Directors, the Leadership Council and the Staff of Youth With A Mission Montana-Lakeside, as those who have accepted and responded to the call of Christ’s Great Commission to, “Go into all the world and preach the gospel to every creature,” offer the following Statement of Faith:</p>
+        <p>We, the Board of Directors, the Leadership Council and the Missionary Members of Youth With A Mission Montana-Lakeside, as those who have accepted and responded to the call of Christ’s Great Commission to, “Go into all the world and preach the gospel to every creature,” offer the following Statement of Faith:</p>
         
         
         <div id="scripture" class="doctrine-container">
