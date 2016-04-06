@@ -28,4 +28,27 @@ $meta_boxes[] = array(
 	),
 );
 
+$meta_boxes[] = array(
+	'title'  => 'Ask a Question Form',
+	'pages' => array( 'page' ),
+	'context' => 'normal',
+	'priority' => 'high',
+	'fields' => array(
+        
+        //Sidebar Form
+		array(
+			'name'	=> 'Sidebar Question Shortcode',
+			'id'	=> "{$prefix}application_question_form_shortcode",
+			'type'	=> 'text',
+		),
+		
+	),
+
+	'only_on'    => array(
+		//'id'       => array(),
+		'template' => array( 'page-application.php' ),
+		//'parent'   => array()
+	),
+);
+
 ?>

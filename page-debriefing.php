@@ -46,7 +46,7 @@ get_header(); ?>
         </ul>
         <div class="tabbed-sidebar-content">
             <div class="tabs-content">
-              <div class="content active" id="panel1">
+              <div class="content minimal-gf-form active" id="panel1">
                 <?php echo do_shortcode(rwmb_meta('debriefing_registration_form_shortcode')); ?>
               </div>
               <div class="content minimal-gf-form" id="panel2">
