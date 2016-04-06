@@ -27,7 +27,7 @@ get_header(); ?>
 
         if ( ! empty($terms) ) {
             echo '<div data-magellan-destination="school-leaders" class="authors-container program-leaders-container">';
-            echo '<h2>Debriefers</h2>';
+            echo '<h2>Debriefing Staff</h2>';
             foreach ( $terms as $term ) {
                 $author_object = get_post( $term, OBJECT );
                 $leader_ids[] = $author_object->ID;
