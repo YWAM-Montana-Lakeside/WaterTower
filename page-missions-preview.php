@@ -33,12 +33,12 @@ get_header(); ?>
         </div>
     </div>
     
-    <div class="columns large-4 stick-to-parent minimal-gf-form">
+    <div class="columns large-4 tabbed-sidebar-container stick-to-parent minimal-gf-form">
         <ul class="tabs" data-tab>
           <li class="tab-title active" style="width: 50%;"><a href="#panel1">Register</a></li>
           <li class="tab-title" style="width: 50%;"><a href="#panel2">Quesitons</a></li>
         </ul>
-        <div class="missions-preview-form-container">
+        <div class="tabbed-sidebar-content">
             <div class="tabs-content">
               <div class="content active" id="panel1">
                 <?php echo do_shortcode(rwmb_meta('missions_preview_registration_form_shortcode')); ?>

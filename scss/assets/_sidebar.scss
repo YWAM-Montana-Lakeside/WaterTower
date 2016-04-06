@@ -135,3 +135,45 @@
     width: 100%;
   }
 }
+
+.tabbed-sidebar-container {
+    
+    .tab-title {
+        text-align: center;
+        
+        a {
+            background: #F9F9F9;
+            color: #999;
+            font-family: "HelveticaNeueW01-77BdCn 692722";
+            text-transform: uppercase;
+        }
+            
+        &.active a {
+            background: #EFEFEF;
+            color: #666;
+        }
+    }
+    
+    .tabbed-sidebar-content {
+        background: #EFEFEF;
+        padding: 0px 16px 0px 16px;
+        position: relative;
+
+        h4 {
+            background: $primary_color;
+            color: white;
+            margin-top: 0px;
+            padding: 14px 16px;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+        }
+
+        .button {
+            background: $primary_color;
+            position: absolute;
+            left: 0px;
+        }
+    }
+}
