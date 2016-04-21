@@ -124,6 +124,11 @@ $('.entry-content blockquote').each(function() {
     $(this).append('<a class="tweet-quote" href="http://twitter.com/home/?status=' + blockquoteContent + ' ' + articleLink + '"><i class="fa fa-twitter"></i> Tweet This</a>');
 });
 
+// Turn Apply Button Blue
+$(document).ready(function(){
+    $(".top-bar-section ul li a:contains('Apply Now')").css( "cssText", "background: #5D9ECB !important");
+    $(".top-bar-section ul li a:contains('Apply Now')").css( "color", "white");
+});
 
 // Get Crazy Script
 $('.get-crazy-button').click(function() {
