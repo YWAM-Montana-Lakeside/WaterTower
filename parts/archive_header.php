@@ -57,7 +57,7 @@ if ( is_category() ) {
 		<div class="archive-header-title">
 			<h1>Target Nation Blog: <span class="archive-header-term"><?php echo single_term_title(); ?></span></h1>
 		</div>
-		<p>Our blog is a place where students and staff alike post frequently about all of the things that are happening here on campus and throughout the world. We post outreach updates, testimonies, devotionals, and encouragements that cover a multitude of themes and subjects. Our desire is that these posts will give you a better idea of what we are doing here at YWAM Montana | Lakeside and that this blog will be an encouragement for you in your walk with Christ.</p> 
+		<p>Our blog is a place where students and missionary members alike post frequently about all of the things that are happening here on campus and throughout the world. We post outreach updates, testimonies, devotionals, and encouragements that cover a multitude of themes and subjects. Our desire is that these posts will give you a better idea of what we are doing here at YWAM Montana | Lakeside and that this blog will be an encouragement for you in your walk with Christ.</p> 
 		<div class="archive-header-meta clearfix">
 			<div>
 				<?php
